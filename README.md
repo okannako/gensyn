@@ -30,6 +30,7 @@ sudo apt update && sudo apt install lz4 ocl-icd-opencl-dev ocl-icd-libopencl1 ta
 ```
 sudo apt-get install python3
 sudo apt-get -y install python3-pip
+sudo apt install python3.10-venv
 ```
 
 3-) Node Yükleme
