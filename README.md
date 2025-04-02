@@ -54,10 +54,12 @@ git clone https://github.com/gensyn-ai/rl-swarm.git
 cd rl-swarm
 ```
 
-6-) Tmux Ekranı Açamak ve Run Swarm (En son soruda Y'ye sasın ve gelen ekranlarda Enter'a basın geçin)
+6-) Tmux Ekranı Açamak ve Run Swarm (İlk soruda Y'ye ikinci soruda N'ye basın ve gelen ekranlarda Enter'a basın geçin)
 ```
-tmux
+tmux new-session -t gensyn
 python3 -m venv .venv
 source .venv/bin/activate
 ./run_rl_swarm.sh
 ```
+
+7-) Giriş
