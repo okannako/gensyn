@@ -82,7 +82,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz && tar -x
 - Açılan ekranda ```Show Authtoken```'a tıklayıp çıkan satırı Vps'de 2. bir tmux ekranı açarak o ekranda yapıştırıyoruz.
 - Daha sonra ```ngrok http 3000``` yazıp enterlayınca bize aşağıdaki ss'de ki gibi ekranda verdiği adresi tarayıcımızda yapıştırıp giriş işlemlerini yapıyoruz.
 
-9-)
+9-) Kod geldikten ve giriş ekranı onayımızı gördükten sonra logları izlemeye devam ediyoruz. Buradaki işlemler vakit alabilir. SS'de ki ilk kutucuk bizim ismimizi 2. kutucuk ise işlemlerin sorunsuz bittiğini ve node'un çalıştığını gösteriyor.
+![gsyn](https://github.com/user-attachments/assets/892ea3c5-9930-4b01-9bfc-388360d9b78e)
 
 10-) Yedek Alma
 - Başlarken size verdiği node ismini ve vps'in içinde root kullanıcısında olan ```swarm.pem``` (/root/rl-swarm/swarm.pem) isimli dosyayı mutlaka yedekliyorsunuz. 
