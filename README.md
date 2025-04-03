@@ -85,4 +85,4 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz && tar -x
 9-)
 
 10-) Yedek Alma
-- Başlarken size verdiği node ismini ve vps'in içinde root kullanıcısında olan ```swarm.pem``` isimli dosyayı mutlaka yedekliyorsunuz. 
+- Başlarken size verdiği node ismini ve vps'in içinde root kullanıcısında olan ```swarm.pem``` (/root/rl-swarm/swarm.pem) isimli dosyayı mutlaka yedekliyorsunuz. 
