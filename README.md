@@ -10,7 +10,7 @@
 ## Tavsiye Edilen Sistem Gereksinimleri
 - CPU: Minumum Bir Değer Yok
 - RAM: 16+ GB
-- - İşletim Sistemi: Ubuntu 22.04LTS
+- İşletim Sistemi: Ubuntu 22.04LTS
   
 Ya da aşağıda verilmiş 4 ekran kartında birinin olduğu bir sistem
 
