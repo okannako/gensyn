@@ -67,7 +67,7 @@ source .venv/bin/activate
 
 - Daha sonra Login'e tıkladığımızda bize seçenekler sunuyor. Mail adresi girebilir ya da direkt gmail ile bağlanabilirsiniz. Eğer sorun çıkmazsa 9. adımdan devam edin. Kod gelmiyor ya da bağlanamıyorsanız 8. adımı uygulayın.
 
-8.) Kod gelmediği için işlemleri ngrok aracılıpyla tamamlayacağız. Öncelikle aşağıdaki kodları girelim.
+8-) Kod gelmediği için işlemleri ngrok aracılıpyla tamamlayacağız. Öncelikle aşağıdaki kodları girelim.
 x86;
 ```
 wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz && tar -xvzf ngrok-v3-stable-linux-amd64.tgz && sudo mv ngrok /usr/local/bin/
@@ -82,4 +82,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz && tar -x
 - Açılan ekranda ```Show Authtoken```'a tıklayıp çıkan satırı Vps'de 2. bir tmux ekranı açarak o ekranda yapıştırıyoruz.
 - Daha sonra ```ngrok http 3000``` yazıp enterlayınca bize aşağıdaki ss'de ki gibi ekranda verdiği adresi tarayıcımızda yapıştırıp giriş işlemlerini yapıyoruz.
 
-9.)
+9-)
+
+10-) Yedek Alma
+- Başlarken size verdiği node ismini ve vps'in içinde root kullanıcısında olan ```swarm.pem``` isimli dosyayı mutlaka yedekliyorsunuz. 
