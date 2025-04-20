@@ -87,3 +87,38 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz && tar -x
 
 10-) Yedek Alma
 - Başlarken size verdiği node ismini ve vps'in içinde root kullanıcısında olan ```swarm.pem``` (/root/rl-swarm/swarm.pem) isimli dosyayı mutlaka yedekliyorsunuz. 
+
+## Güncelleme Adımları - 20.04.2025
+- Arkadaşlar iki yol var. Birincisini denedikten sonra hata verirse ikinci yolu deneyin. Öncesinde kesinlikle yükleme adımlarında 10. sırada bahsettiğim swaprm.pen dosyasının yediğini alın. İlk olarak ```ctrl+c``` yaparak node mutlaka durdurun.
+
+1-) Repo Güncelleyerek Başlatmak
+```
+cd
+cd rl-swarm
+git pull
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+\. "$HOME/.nvm/nvm.sh"
+nvm install 22
+node -v
+./run_rl_swarm.sh
+```
+
+2-) Bütün Dosyaları Kaldırdıktan Sonra Tekrar Klonlayarak Başlatmak
+```
+cd
+deactivate
+mv /root/rl-swarm/swarm.pem /root/
+rm -rf rl-swarm
+git clone https://github.com/gensyn-ai/rl-swarm.git
+cd rl-swarm
+mv /root/swarm.pem /root/rl-swarm/
+chmod +x swarm.pem
+python3 -m venv .venv
+source .venv/bin/activate
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+\. "$HOME/.nvm/nvm.sh"
+nvm install 22
+node -v
+sed -i '1i # ~/.bashrc: executed by bash(1) for non-login shells.\n\n# If not running interactively, don'\''t do anything\ncase $- in\n    *i*) ;;\n    *) return;;\nesac\n' ~/.bashrc
+./run_rl_swarm.sh
+```
