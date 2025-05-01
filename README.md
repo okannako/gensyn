@@ -88,18 +88,23 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz && tar -x
 10-) Yedek Alma
 - Başlarken size verdiği node ismini ve vps'in içinde root kullanıcısında olan ```swarm.pem``` (/root/rl-swarm/swarm.pem) isimli dosyayı mutlaka yedekliyorsunuz. 
 
-## Güncelleme Adımları - 21.04.2025
-- Arkadaşlar iki yol var. Birincisini denedikten sonra hata verirse ikinci yolu deneyin. Öncesinde kesinlikle yükleme adımlarında 10. sırada bahsettiğim swaprm.pen dosyasının yediğini alın. İlk olarak ```ctrl+c``` yaparak node mutlaka durdurun.
+## Güncelleme Adımları - v0.4.0 - 01.05.2025
+- Arkadaşlar iki yol var. Birincisini denedikten sonra hata verirse ikinci yolu deneyin. Öncesinde kesinlikle yükleme adımlarında 10. sırada bahsettiğim swaprm.pen dosyasının yediğini alın. İlk olarak ```ctrl+c``` yaparak node mutlaka durdurun. Kodları girdikten sonra en alttaki işlemleri yapın.
 
 1-) Repo Güncelleyerek Başlatmak
 ```
 cd
+deactivate
 cd rl-swarm
-git pull
+git fetch
+git reset --hard origin/main
+python3 -m venv .venv
+source .venv/bin/activate
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 \. "$HOME/.nvm/nvm.sh"
 nvm install 22
 node -v
+pip install hf_xet
 ./run_rl_swarm.sh
 ```
 
@@ -121,5 +126,12 @@ nvm install 22
 node -v
 pip install protobuf==4.25.3
 sed -i '1i # ~/.bashrc: executed by bash(1) for non-login shells.\n\n# If not running interactively, don'\''t do anything\ncase $- in\n    *i*) ;;\n    *) return;;\nesac\n' ~/.bashrc
+pip install hf_xet
 ./run_rl_swarm.sh
 ```
+
+- Bu adımlardan sonra önce Testnet sonrusuna "Y", daha sonra gelen (Math (A) or Math Hard (B) sorusuna ise sisteminize göre cevap veriyorsunuz. A düşük sistemler B yüksek olduğunu düşündüğünüz sistemler için mesela 4090 RTX 'li ekran kartlı bir sistem gibi. Bunuda seçtikten sonra [0.5, 1.5, 7, 32, 72] parametre seçimi geliyor burada en düşükten başlayarak deneyebilirsiniz, sadece 1 değer girilecek. Ondan sonra da gelen son soruya N diyerek başlatabilirsiniz.
+
+- Kontrol için iki site var, bu iki siteden seçiminize göre girip kontrol edebilirsiniz.
+> A'yı seçerseniz https://dashboard-math.gensyn.ai/
+> B'yi seçerseniz https://dashboard-math-hard.gensyn.ai/
