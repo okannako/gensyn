@@ -88,7 +88,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz && tar -x
 10-) Yedek Alma
 - Başlarken size verdiği node ismini ve vps'in içinde root kullanıcısında olan ```swarm.pem``` (/root/rl-swarm/swarm.pem) isimli dosyayı mutlaka yedekliyorsunuz. 
 
-## Güncelleme Adımları - v0.4.0 - 01.05.2025
+## Güncelleme Adımları - v0.4.0 - 02.05.2025
 - Arkadaşlar iki yol var. Birincisini denedikten sonra hata verirse ikinci yolu deneyin. Öncesinde kesinlikle yükleme adımlarında 10. sırada bahsettiğim swaprm.pen dosyasının yediğini alın. İlk olarak ```ctrl+c``` yaparak node mutlaka durdurun. Kodları girdikten sonra en alttaki işlemleri yapın.
 
 1-) Repo Güncelleyerek Başlatmak
