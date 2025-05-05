@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://orbisworlds.org">
+  <a href="">
     <img alt="Hero" src="https://github.com/user-attachments/assets/f476f067-3a68-4765-8388-48d022a50ddf" width="75%" />
   </a>
 </p>
