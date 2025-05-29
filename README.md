@@ -88,7 +88,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz && tar -x
 10-) Yedek Alma
 - Başlarken size verdiği node ismini ve vps'in içinde root kullanıcısında olan ```swarm.pem``` (/root/rl-swarm/swarm.pem) isimli dosyayı mutlaka yedekliyorsunuz. 
 
-## Güncelleme Adımları - v0.4.3 - 03.05.2025
+## Güncelleme Adımları - 29.05.2025
 - Arkadaşlar iki yol var. Birincisini denedikten sonra hata verirse ikinci yolu deneyin. Öncesinde kesinlikle yükleme adımlarında 10. sırada bahsettiğim swaprm.pen dosyasının yediğini alın. İlk olarak ```ctrl+c``` yaparak node mutlaka durdurun. Kodları girdikten sonra en alttaki işlemleri yapın.
 
 1-) Repo Güncelleyerek Başlatmak
@@ -130,7 +130,7 @@ pip install hf_xet
 ./run_rl_swarm.sh
 ```
 
-- Bu adımlardan sonra önce Testnet sonrusuna "Y", daha sonra gelen (Math (A) or Math Hard (B) sorusuna ise sisteminize göre cevap veriyorsunuz. A düşük sistemler B yüksek olduğunu düşündüğünüz sistemler için mesela 4090 RTX 'li ekran kartlı bir sistem gibi. Bunuda seçtikten sonra [0.5, 1.5, 7, 32, 72] parametre seçimi geliyor burada en düşükten başlayarak deneyebilirsiniz, sadece 1 değer girilecek. Ondan sonra da gelen son soruya N diyerek başlatabilirsiniz.
+- Bu adımlardan sonra önce Testnet sonrusuna "Y", daha sonra gelen (Math (A) or Math Hard (B) sorusuna ise sisteminize göre cevap veriyorsunuz. A düşük sistemler B yüksek olduğunu düşündüğünüz sistemler için mesela 4090 RTX 'li ekran kartlı bir sistem gibi. Bunuda seçtikten sonra [0.5, 1.5, 7, 32, 72] parametre seçimi geliyor burada en düşükten başlayarak deneyebilirsiniz, sadece 1 değer girilecek. Ondan sonra da gelen son soruya N diyerek başlatabilirsiniz. Daha sonra ilk Train işlemini tamamladığında size 3 seçenek sunuyor birini seçerek devam etmelisiniz. 3 numarayı seçerek node devam ettirdim.
 
 - Kontrol için iki site var, bu iki siteden seçiminize göre girip kontrol edebilirsiniz.
 > A'yı seçerseniz https://dashboard-math.gensyn.ai/
