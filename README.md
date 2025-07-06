@@ -128,7 +128,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 \. "$HOME/.nvm/nvm.sh"
 nvm install 22
 node -v
-pip install protobuf==4.25.3
+pip install protobuf==3.12.2
+pip install transformers==4.51.3 --force-reinstall
+git describe --tags
+sed -i -E 's/(num_train_samples:\s*)2/\1 1/' rgym_exp/config/rg-swarm.yaml
 sed -i '1i # ~/.bashrc: executed by bash(1) for non-login shells.\n\n# If not running interactively, don'\''t do anything\ncase $- in\n    *i*) ;;\n    *) return;;\nesac\n' ~/.bashrc
 pip install hf_xet
 pip install trl
