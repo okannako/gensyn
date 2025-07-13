@@ -143,6 +143,15 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 
 - Bu adımlardan sonra ngrok ekranında da giriş yapıp node başlatıyoruz. Bundan sonra ilk gelen ekranda ``N``, daha sonra gelen soruya da ``Enter`` yapıp geçiyoruz. Logları biraz izleyin çalıştığından emin olun.
 
+### ```ValueError: Your setup doesn't support bf16/gpu.``` Hatasının Çözümü
+- Sadece CPU üzerinde çalıştıracak olanlar, yükleme ya da güncelleme sonucunda yukarıdaki hata ile karşılaşıyorlar. Aşağıdaki kodlarla çözülüyor. İlk önce CTRL+C yaparak node durduruyoruz. Son kodlardan devam.
+```
+rm -rf /root/rl-swarm/rgym_exp/config/rg-swarm.yaml
+wget -q -O rg-swarm.yaml https://raw.githubusercontent.com/okannako/gensyn/refs/heads/main/rg-swarm.yaml && chmod +x rg-swarm.yaml
+```
+- Bu kodları girdikten sonra normal bir şekilde node tekrar başlatıyoruz.
+
+
 - Kontrol için aşağıdaki siteyi kullanabilirsiniz.
 > https://dashboard.gensyn.ai/
 
