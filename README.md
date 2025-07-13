@@ -147,7 +147,7 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 - Sadece CPU üzerinde çalıştıracak olanlar, yükleme ya da güncelleme sonucunda yukarıdaki hata ile karşılaşıyorlar. Aşağıdaki kodlarla çözülüyor. İlk önce CTRL+C yaparak node durduruyoruz. Son kodlardan devam.
 ```
 rm -rf /root/rl-swarm/rgym_exp/config/rg-swarm.yaml
-wget -q -O rg-swarm.yaml https://raw.githubusercontent.com/okannako/gensyn/refs/heads/main/rg-swarm.yaml && chmod +x rg-swarm.yaml
+wget -q -O /root/rl-swarm/rgym_exp/config/rg-swarm.yaml https://raw.githubusercontent.com/okannako/gensyn/refs/heads/main/rg-swarm.yaml && chmod +x rg-swarm.yaml
 ```
 - Bu kodları girdikten sonra normal bir şekilde node tekrar başlatıyoruz.
 
