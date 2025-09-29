@@ -16,7 +16,7 @@ ya da aşağıda verilmiş 4 ekran kartında birinin olduğu bir sistem
 
 - RTX 3090, RTX 4090, A100, H100
 - RAM: 16+ GB
-- - İşletim Sistemi: Ubuntu 22.04LTS
+- İşletim Sistemi: Ubuntu 22.04LTS
 
 ## Yükleme Adımları
 - Aşğıdaki adımları sırayla uygulayarak testente katılabilirsiniz.
