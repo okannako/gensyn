@@ -88,7 +88,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz && tar -x
 10-) Yedek Alma
 - Başlarken size verdiği node ismini ve vps'in içinde root kullanıcısında olan ```swarm.pem``` (/root/rl-swarm/swarm.pem) isimli dosyayı mutlaka yedekliyorsunuz. 
 
-## Güncelleme Adımları - 26.06.2025
+## Güncelleme Adımları - 28.09.2025
 - Arkadaşlar iki yol var. Birincisini denedikten sonra hata verirse ikinci yolu deneyin. Öncesinde kesinlikle yükleme adımlarında 10. sırada bahsettiğim swaprm.pen dosyasının yediğini alın. İlk olarak ```ctrl+c``` yaparak node mutlaka durdurun. Kodları girdikten sonra en alttaki işlemleri yapın.
 
 1-) Repo Güncelleyerek Başlatmak
@@ -141,7 +141,7 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 ./run_rl_swarm.sh
 ```
 
-- Bu adımlardan sonra ngrok ekranında da giriş yapıp node başlatıyoruz. Bundan sonra ilk gelen ekranda ``N``, daha sonra gelen soruya da ``Enter`` yapıp geçiyoruz. Logları biraz izleyin çalıştığından emin olun.
+- Bu adımlardan sonra ngrok ekranında da giriş yapıp node başlatıyoruz. Bundan sonra ilk gelen ekranda ``N``, daha sonra gelen soruya da ``Enter`` A basıyoruz sonra gelen AI Prediction Market sorusuna ``Y`` yapıp geçiyoruz. Logları biraz izleyin çalıştığından emin olun.
 
 ### ```ValueError: Your setup doesn't support bf16/gpu.``` Hatasının Çözümü
 - Sadece CPU üzerinde çalıştıracak olanlar, yükleme ya da güncelleme sonucunda yukarıdaki hata ile karşılaşıyorlar. Aşağıdaki kodlarla çözülüyor. İlk önce CTRL+C yaparak node durduruyoruz. Son kodlardan devam.
