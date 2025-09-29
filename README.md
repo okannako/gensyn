@@ -118,7 +118,7 @@ cd
 deactivate
 mv /root/rl-swarm/swarm.pem /root/
 rm -rf rl-swarm
-git clone https://github.com/gensyn-ai/rl-swarm.git
+git clone https://github.com/gensyn-ai/rl-swarm
 cd rl-swarm
 mv /root/swarm.pem /root/rl-swarm/
 chmod +x swarm.pem
