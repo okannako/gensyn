@@ -141,7 +141,7 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 ./run_rl_swarm.sh
 ```
 
-- Bu adımlardan sonra ngrok ekranında da giriş yapıp node başlatıyoruz. Bundan sonra ilk gelen ekranda ``N``, daha sonra gelen soruya da ``Enter`` A basıyoruz sonra gelen AI Prediction Market sorusuna ``Y`` yapıp geçiyoruz. Logları biraz izleyin çalıştığından emin olun.
+- Bu adımlardan sonra ngrok ekranında da giriş yapıp node başlatıyoruz. Bundan sonra ilk gelen ekranda ``N``, daha sonra gelen soruya da ``Enter`` a basıyoruz sonra gelen AI Prediction Market sorusuna ``Y`` yapıp geçiyoruz. Logları biraz izleyin çalıştığından emin olun.
 
 ### ```ValueError: Your setup doesn't support bf16/gpu.``` Hatasının Çözümü
 - Sadece CPU üzerinde çalıştıracak olanlar, yükleme ya da güncelleme sonucunda yukarıdaki hata ile karşılaşıyorlar. Aşağıdaki kodlarla çözülüyor. İlk önce CTRL+C yaparak node durduruyoruz. Son kodlardan devam.
