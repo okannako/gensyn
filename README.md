@@ -94,10 +94,11 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz && tar -x
 1-) Repo Güncelleyerek Başlatmak
 ```
 cd
-deactivate
 cd rl-swarm
-git fetch
-git reset --hard origin/main
+git stash
+git pull
+deactivate
+rm -rf .venv
 python3 -m venv .venv
 source .venv/bin/activate
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
@@ -120,10 +121,14 @@ mv /root/rl-swarm/swarm.pem /root/
 rm -rf rl-swarm
 git clone https://github.com/gensyn-ai/rl-swarm
 cd rl-swarm
+git stash
+git pull
+rm -rf .venv
+python3 -m venv .venv
+source .venv/bin/activate
 mv /root/swarm.pem /root/rl-swarm/
 chmod +x swarm.pem
 python3 -m venv .venv
-source .venv/bin/activate
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 \. "$HOME/.nvm/nvm.sh"
 nvm install 22
