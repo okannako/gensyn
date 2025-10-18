@@ -55,7 +55,7 @@ git clone https://github.com/gensyn-ai/rl-swarm.git
 cd rl-swarm
 ```
 
-6-) Run Swarm (İlk soruda Y'ye ikinci soruda N'ye basın ve gelen ekranlarda Enter'a basın geçin)
+6-) Run Swarm (İlk soruda N'ye ikinci soruda ENTER'a üçüncü soruda Y'ye basın ve gelen ekranlarda Enter'a basın geçin)
 ```
 python3 -m venv .venv
 source .venv/bin/activate
@@ -88,10 +88,16 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm64.tgz && tar -x
 10-) Yedek Alma
 - Başlarken size verdiği node ismini ve vps'in içinde root kullanıcısında olan ```swarm.pem``` (/root/rl-swarm/swarm.pem) isimli dosyayı mutlaka yedekliyorsunuz. 
 
-## Güncelleme Adımları - 28.09.2025
-- Arkadaşlar iki yol var. Birincisini denedikten sonra hata verirse ikinci yolu deneyin. Öncesinde kesinlikle yükleme adımlarında 10. sırada bahsettiğim swaprm.pen dosyasının yediğini alın. İlk olarak ```ctrl+c``` yaparak node mutlaka durdurun. Kodları girdikten sonra en alttaki işlemleri yapın.
+## Güncelleme Adımları - 18.10.2025
+- Arkadaşlar üç yol var. Birincisini denedikten sonra hata verirse ikinci yolu deneyin. Öncesinde kesinlikle yükleme adımlarında 10. sırada bahsettiğim swaprm.pen dosyasının yediğini alın. İlk olarak ```ctrl+c``` yaparak node mutlaka durdurun. Kodları girdikten sonra en alttaki işlemleri yapın.
 
-1-) Repo Güncelleyerek Başlatmak
+1-) Ekip tarafından paylaşılan tek satır kodla. Bunu rl-swarm klasörünün altında direkt çalıştırın. 
+```
+rm -rf .venv && git pull && python3 -m venv .venv && source .venv/bin/activate
+./run_rl_swarm.sh
+```
+
+2-) Repo Güncelleyerek Başlatmak
 ```
 cd
 cd rl-swarm
@@ -113,7 +119,7 @@ pip install hf_xet
 ./run_rl_swarm.sh
 ```
 
-2-) Bütün Dosyaları Kaldırdıktan Sonra Tekrar Klonlayarak Başlatmak
+3-) Bütün Dosyaları Kaldırdıktan Sonra Tekrar Klonlayarak Başlatmak
 ```
 cd
 deactivate
